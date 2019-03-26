@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>DKBOOST</title>
+	<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+	<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all">
+	<!------ js ------>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script src="js/jquery.min.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!------ js ------>
+	<!--- fonts --->
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:600italic,700italic,800italic,400,800,700,600,300'
+		rel='stylesheet' type='text/css'>
+	<!--- fonts --->
+	<!---- animated-css ---->
+	<link href="css/animate.css" rel="stylesheet" type="text/css" media="all">
+	<script src="js/wow.min.js"></script>
+	<script>
+		new WOW().init();
+	</script>
+	<!---- animated-css ---->
+</head>
+
+<body>
+	<!--- header ---->
+	<div id="to-top" class="header-bg">
+		<div id="home" class="header">
+			<!--- container ---->
+			<div class="container">
+				<div class="header-logo" id="myTopnav">
+					<a href="index.html"><img src="images/logo.png" style="height: 40%;width: 40%;"></a>
+				</div>
+				<div class="header-nav">
+					<span class="menu"><label> </label> </span>
+					<ul>
+						<li class="active"><a href="#">Pr&eacute;sentation</a></li>
+						<li><a href="faq.html">FAQ</a></li>
+						<li><a href="#">Centres de d&eacute;calaminages</a></li>
+						<li><a href="#">M&eacute;dia</a></li>
+						<li><a href="#">Presse</a></li>
+						<li><a href="#">Contacts</a></li>
+						<a href="javascript:void(0);" class="icon" onclick="myFunction2()">
+					</ul>
+				</div>
+				<div class="clearfix"> </div>
+				<!----- script-for-menu ---->
+				<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+				<script>
+					$("span.menu").click(function () {
+						$(".header-nav ul").slideToggle("slow", function () {
+						});
+					});
+				</script>
+				<script>
+					function myFunction() {
+						document.getElementById("slide").innerHTML = <p>En 2014 est fondée la société DECALAM France, elle est désormais parmi les leaders du décalaminage moteur à l'hydrogène en France. Cette société familiale est chargée de distribuer la machine DKBOOST en France.</p>;
+					}
+					function myFunction2() {
+ 					 var x = document.getElementById("myTopnav");
+ 					 if (x.className === "topnav") {
+ 					   x.className += " responsive";
+					  } else {
+				    x.className = "topnav";
+					  }
+					} 
+				</script>
+
+				<!----- script-for-menu ---->
+			</div>
+			<!----- banner ----->
+		</div>
+	</div>
+
+	<!--- container --->
+	<div style="margin-top: 6%;" class="container">
+		<div class="row">
+			<div class="text-center wow bounceIn" data-wow-delay="0.4s">
+				<h4  id="demo">Qui sommes-nous ?</h4>
+			</div>
+			<div class="text-center" style="margin-top: 15%">
+				<img src="images/Fichier 2.png" style="width: 3%; height: 3%;" onclick="myFunction()"/>
+			</div>
+		</div>
+	</div>
+	<!--- container --->
+
+	<!--- footer ---->
+	<footer class="footer" style="margin-top: 4.1%;">
+		<!--- container --->
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-md-5">
+
+					<p>DECALAM FRANCE </p>
+					<p></span>T&egrave;l : 06 33 93 90 75 </p>
+					<p></span>Email : contact@dkboost.fr</p></span>
+					<p>418 rue du Mas de Verchant 34000 MONTPELLIER</p>
+				</div>
+				<div class="col-md-7">
+					<img src="images/Facebook-gris-82.png" />
+					<img src="images/Instagram-gris.png" />
+					<img src="images/Twitter-gris.png" />
+				</div>
+			</div>
+		</div>
+		<!--- footer ---->
+	</footer>
+</body>
+</head>
+</html>
